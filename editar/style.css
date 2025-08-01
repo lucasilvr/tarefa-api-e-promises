@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+
+.header {
+  background-color: #415fce;
+  display: flex;
+  justify-content: space-between;
+  height: 139px;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.header .titulo h2 {
+  font-size: 64px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+
+.header .botao button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 315px;
+  height: 60px;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: #1f9b5f;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.header .botao button img {
+  height: 40px;
+}
+
+/* main */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  margin: 80px;
+}
+
+.caixa {
+  width: 1400px;
+  height: 493px;
+  border-radius: 12px;
+  background-color: #247BB1;
+  padding: 32px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+    gap: 20px ;
+}
+
+.lado1,
+.lado2 {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+
+form label {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+form input,
+form select {
+  width: 460px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.botao-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.botao-submit {
+  padding: 8px 25px 8px 25px;
+  width: 167px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  background-color: #1f9b5f;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  background-color: #fcf7f8;
+  font-family: "Roboto", sans-serif;
+  margin-top: 60px
+}
+
+.footer .informacoes {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.footer .info1,
+.footer .info2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 6px;
+  max-width: 215px;
+}
+
+.footer .info1 h2,
+.footer .info2 h2 {
+  color: #4e8098;
+  font-weight: 500;
+}
+
+.footer .info1 p,
+.footer .info2 p {
+  color: #274553;
+  font-weight: 400;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.redes {
+  margin-top: 7px;
+}
+
+.final {
+  background-color: #415fce;
+  display: flex;
+  justify-content: center;
+  height: 34px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+}

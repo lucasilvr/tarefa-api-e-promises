@@ -1,0 +1,120 @@
+/* Reset básico e configuração de fonte */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilização do card principal */
+.card {
+    width: 320px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- PARTE DE CIMA ---- */
+.parte-cima {
+    position: relative; /* Necessário para posicionar a div .açoes */
+}
+
+.foto img {
+    width: 100%;
+}
+
+/* Div que agrupa nota e botões */
+.açoes {
+    position: absolute;
+    top: 16px; /* Espaçamento do topo */
+    left: 0;
+    width: 100%;
+    padding: 0 16px; /* Espaçamento das laterais */
+    display: flex;
+    justify-content: space-between; /* Alinha a nota à esquerda e os botões à direita */
+    align-items: flex-start;
+}
+
+/* Estilo da nota */
+.açoes .ranking p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 4px 12px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Container dos botões */
+.açoes .button-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo geral dos botões */
+.açoes button img {
+    height: 44px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ---- PARTE DE BAIXO ---- */
+.parte-baixo {
+    background-color: #2c3a6b;
+    color: white;
+    padding: 24px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.descricao h2 {
+    color: #ccff00;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.descricao h3 {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.descricao p {
+    color: #bdc8f0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Estilo específico para o preço */
+.descricao p.preco {
+    color: #ccff00;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 10px;
+}
